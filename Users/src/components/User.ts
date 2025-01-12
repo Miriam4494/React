@@ -1,4 +1,5 @@
 export type UserType = {
+    id?: number,
     firstName?: string,
     lastName?: string,
     email?: string,
@@ -7,16 +8,24 @@ export type UserType = {
     phone?: string,
 }
 export type action = {
-    type: 'DELETE' | 'CREATE' | 'UPDATE',
+    type: 'DELETE' | 'CREATE' | 'UPDATE' | 'LOGIN',
     data: Partial<UserType>
 }
 export const User = (state: UserType, action: action): UserType => {
+    console.log(action.data);
+    console.log(action.type);
+
     switch (action.type) {
+
         case 'CREATE':
             return {
-                ...state, firstName: action.data.firstName,password: action.data.password
+                ...state, email: action.data.email, password: action.data.password, id: action.data.id
             }
-        case 'UPDATE':
+        case 'UPDATE' :
+            return {
+                ...state, ...action.data
+            };
+            case 'LOGIN':
             return {
                 ...state, ...action.data
             };
@@ -36,3 +45,13 @@ export const style = {
     px: 4,
     pb: 3,
 };
+export const styleBox = {
+    fontSize: '20px',
+    fontWeight: 'bold',
+    p: 5,
+    border: '2px dashed black',
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+}

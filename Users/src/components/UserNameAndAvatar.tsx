@@ -22,21 +22,36 @@ const UserNameAndAvatar = () => {
         }
         return color;
     }
-    function stringAvatar(name: string) {
+
+    function stringAvatar(email: string, name: string) {
+        console.log("name");
+        console.log(name);
+
+        let x;
+        if (name == 'undefined'||name==' ')
+            x = `${email.split(' ')[0][0]}`
+
+        else
+            x = `${name.split(' ')[0][0]}${name.split(' ')[1] ? name.split(' ')[1][0] : ''}`
         return {
             sx: {
                 bgcolor: stringToColor(name),
             },
-            children: `${name.split(' ')[0][0]}${name.split(' ')[1] ? name.split(' ')[1][0] : ''}`
+            children: x
         };
     }
-    
+
+
     return (<>
         <Stack direction="row" spacing={2}>
-            <Avatar {...stringAvatar(user.firstName + (user.lastName !== undefined ? ' ' + user.lastName : ''))} />
+            <Avatar {...stringAvatar(user.email || '', user.firstName + (user.lastName !== undefined ? ' ' + user.lastName : ''))} />
+
             <Typography variant="h5" align="left" >{user.firstName} {user.lastName}</Typography>
             <UpdateUser />
         </Stack>
     </>)
+
+
+
 }
 export default UserNameAndAvatar
