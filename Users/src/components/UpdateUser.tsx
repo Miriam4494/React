@@ -16,7 +16,7 @@ const UpdateUser = () => {
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        setOpen(false)
+        setOpen(false);
         try {
             const res = await axios.put('http://localhost:3000/api/user',
                 {
@@ -48,7 +48,6 @@ const UpdateUser = () => {
     return (<>
         {!open && <Button color="primary" variant="outlined" onClick={() => setOpen(!open)}>Update</Button>}
 
-        
         < Modal open={open} >
             <Box sx={style}>
                 <form onSubmit={handleSubmit}>

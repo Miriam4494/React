@@ -12,20 +12,16 @@ export type action = {
     data: Partial<UserType>
 }
 export const User = (state: UserType, action: action): UserType => {
-    console.log(action.data);
-    console.log(action.type);
-
     switch (action.type) {
-
         case 'CREATE':
             return {
                 ...state, email: action.data.email, password: action.data.password, id: action.data.id
             }
-        case 'UPDATE' :
+        case 'UPDATE':
             return {
                 ...state, ...action.data
             };
-            case 'LOGIN':
+        case 'LOGIN':
             return {
                 ...state, ...action.data
             };

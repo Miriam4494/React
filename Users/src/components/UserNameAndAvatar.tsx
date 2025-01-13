@@ -30,7 +30,6 @@ const UserNameAndAvatar = () => {
         let x;
         if (name == 'undefined'||name==' ')
             x = `${email.split(' ')[0][0]}`
-
         else
             x = `${name.split(' ')[0][0]}${name.split(' ')[1] ? name.split(' ')[1][0] : ''}`
         return {
@@ -41,11 +40,9 @@ const UserNameAndAvatar = () => {
         };
     }
 
-
     return (<>
         <Stack direction="row" spacing={2}>
             <Avatar {...stringAvatar(user.email || '', user.firstName + (user.lastName !== undefined ? ' ' + user.lastName : ''))} />
-
             <Typography variant="h5" align="left" >{user.firstName} {user.lastName}</Typography>
             <UpdateUser />
         </Stack>

@@ -16,8 +16,7 @@ const LoginPage = () => {
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        // setIsLogin(true);
-
+       
         try {
             const res = await axios.post(`http://localhost:3000/api/user/${status}`,
                 {
@@ -52,14 +51,16 @@ const LoginPage = () => {
                     }
                 });
             setIsLogin(true);
-            setOpen(false);
+            
+            
         } catch (e: any) {
             if (e.status === 422 && status == 'register')
                 alert('user already sign up 😞');
             if (e.status == 401 && status == 'login')
                 alert('user is not register 😞');
         }
-        // setOpen(false);
+        setOpen(false);
+
     }
     return (<>
         <userCotext.Provider value={[user, userDispatch]}>
