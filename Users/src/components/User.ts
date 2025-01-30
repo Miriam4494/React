@@ -13,7 +13,7 @@ export type action = {
 }
 export const User = (state: UserType, action: action): UserType => {
     switch (action.type) {
-        case 'CREATE':
+        case 'CREATE':            
             return {
                 ...state, email: action.data.email, password: action.data.password, id: action.data.id
             }

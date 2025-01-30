@@ -2,12 +2,12 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { userCotext } from './LoginUser';
+import { userContext } from '../../App';
 import { Typography } from '@mui/material';
 import UpdateUser from './UpdateUser';
 
 const UserNameAndAvatar = () => {
-    const [user, userDispatch] = React.useContext(userCotext);
+    const [user, userDispatch] = React.useContext(userContext);
 
     function stringToColor(string: string) {
         let hash = 0;
@@ -28,7 +28,7 @@ const UserNameAndAvatar = () => {
         console.log(name);
 
         let x;
-        if (name == 'undefined'||name==' ')
+        if (name == 'undefined' || name == ' ')
             x = `${email.split(' ')[0][0]}`
         else
             x = `${name.split(' ')[0][0]}${name.split(' ')[1] ? name.split(' ')[1][0] : ''}`
@@ -42,8 +42,10 @@ const UserNameAndAvatar = () => {
 
     return (<>
         <Stack direction="row" spacing={2}>
-            <Avatar {...stringAvatar(user.email || '', user.firstName + (user.lastName !== undefined ? ' ' + user.lastName : ''))} />
+
+            <Avatar  {...stringAvatar(user.email || '', user.firstName + (user.lastName !== undefined ? ' ' + user.lastName : ''))} />
             <Typography variant="h5" align="left" >{user.firstName} {user.lastName}</Typography>
+
             <UpdateUser />
         </Stack>
     </>)
