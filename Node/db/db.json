@@ -1,0 +1,257 @@
+{
+  "users": [
+    {
+      "id": 1738587625677,
+      "email": "m@m.m",
+      "password": "1",
+      "firstName": "uhjkl;.",
+      "lastName": "vbnm,./",
+      "address": "gch",
+      "phone": ",פלם"
+    },
+    {
+      "id": 1738587625677,
+      "email": "m@m.m",
+      "password": "1"
+    },
+    {
+      "id": 1738697139838,
+      "email": "dfgh@erdfgt.yhj",
+      "password": "12"
+    },
+    {
+      "id": 1738699318789,
+      "email": "h@h.u",
+      "password": "1",
+      "firstName": "אמא",
+      "lastName": "המתוקה"
+    },
+    {
+      "id": 1738701852079,
+      "email": "h@fgh.ds",
+      "password": "745"
+    },
+    {
+      "id": 1738704099673,
+      "email": "f@g.t",
+      "password": "123",
+      "firstName": "אבא",
+      "lastName": "החמוד",
+      "phone": "05341163"
+    }
+  ],
+  "recipes": [
+    {
+      "id": 1738462550496,
+      "title": "Honey Cake",
+      "products": "Mixer",
+      "description": "A delightful cake perfect for Rosh Hashanah.",
+      "difficulty": "Medium",
+      "authorId": "1738281406035",
+      "ingredients": [
+        "Flour",
+        "Honey",
+        "Oil",
+        "Eggs"
+      ],
+      "instructions": [
+        "Mix the ingredients.",
+        "Bake in the oven at 180°C."
+      ]
+    },
+    {
+      "id": 1738462550497,
+      "title": "Chocolate Chip Cookies",
+      "products": "Oven",
+      "description": "Classic cookies with a rich chocolate flavor.",
+      "difficulty": "Easy",
+      "authorId": "1738281406036",
+      "ingredients": [
+        "Flour",
+        "Sugar",
+        "Butter",
+        "Chocolate chips",
+        "Eggs"
+      ],
+      "instructions": [
+        "Cream the butter and sugar.",
+        "Add eggs and mix.",
+        "Fold in the flour and chocolate chips.",
+        "Scoop onto a baking sheet and bake at 180°C for 10 minutes."
+      ]
+    },
+    {
+      "id": 1738462550498,
+      "title": "Spaghetti Bolognese",
+      "products": "Stove",
+      "description": "A hearty Italian pasta dish with a rich meat sauce.",
+      "difficulty": "Medium",
+      "authorId": "1738281406037",
+      "ingredients": [
+        "Spaghetti",
+        "Ground beef",
+        "Tomato sauce",
+        "Onion",
+        "Garlic",
+        "Carrot",
+        "Celery",
+        "Olive oil",
+        "Parmesan cheese"
+      ],
+      "instructions": [
+        "Sauté onion, garlic, carrot, and celery in olive oil.",
+        "Add ground beef and cook until browned.",
+        "Pour in tomato sauce and simmer for 30 minutes.",
+        "Serve over cooked spaghetti and top with Parmesan cheese."
+      ]
+    },
+    {
+      "id": 1738462550499,
+      "title": "Caesar Salad",
+      "products": "None",
+      "description": "A classic salad with crisp lettuce and creamy dressing.",
+      "difficulty": "Easy",
+      "authorId": "1738281406038",
+      "ingredients": [
+        "Romaine lettuce",
+        "Croutons",
+        "Parmesan cheese",
+        "Caesar dressing"
+      ],
+      "instructions": [
+        "Toss lettuce with croutons and Parmesan.",
+        "Drizzle with Caesar dressing and serve."
+      ]
+    },
+    {
+      "id": 1738462550500,
+      "title": "Chicken Curry",
+      "products": "Stove",
+      "description": "A flavorful curry with tender chicken pieces.",
+      "difficulty": "Medium",
+      "authorId": "1738281406039",
+      "ingredients": [
+        "Chicken breast",
+        "Curry powder",
+        "Coconut milk",
+        "Onion",
+        "Garlic",
+        "Ginger",
+        "Tomato",
+        "Rice"
+      ],
+      "instructions": [
+        "Sauté onion, garlic, and ginger.",
+        "Add chicken and cook until browned.",
+        "Stir in curry powder and tomato.",
+        "Pour in coconut milk and simmer for 20 minutes.",
+        "Serve with rice."
+      ]
+    },
+    {
+      "id": 1738462550501,
+      "title": "Vegetable Stir-Fry",
+      "products": "Wok",
+      "description": "A quick and healthy mix of sautéed vegetables.",
+      "difficulty": "Easy",
+      "authorId": "1738281406040",
+      "ingredients": [
+        "Bell peppers",
+        "Broccoli",
+        "Carrot",
+        "Snow peas",
+        "Soy sauce",
+        "Ginger",
+        "Garlic",
+        "Sesame oil"
+      ],
+      "instructions": [
+        "Heat sesame oil in a wok.",
+        "Add garlic and ginger, sauté briefly.",
+        "Add vegetables and stir-fry until tender-crisp.",
+        "Pour in soy sauce and toss to coat."
+      ]
+    },
+    {
+      "id": 1738462550502,
+      "title": "Beef Tacos",
+      "products": "Stove",
+      "description": "Spicy ground beef served in soft tortillas.",
+      "difficulty": "Medium",
+      "authorId": "1738281406041",
+      "ingredients": [
+        "Ground beef",
+        "Taco seasoning",
+        "Tortillas",
+        "Lettuce",
+        "Tomato",
+        "Cheddar cheese",
+        "Sour cream"
+      ],
+      "instructions": [
+        "Cook ground beef with taco seasoning.",
+        "Warm tortillas.",
+        "Assemble tacos with beef, lettuce, tomato, cheese, and sour cream."
+      ]
+    },
+    {
+      "id": 1738462550503,
+      "title": "Pancakes",
+      "products": "Stove",
+      "description": "Fluffy pancakes perfect for breakfast.",
+      "difficulty": "Easy",
+      "authorId": "1738281406042",
+      "ingredients": [
+        "Flour",
+        "Milk",
+        "Eggs",
+        "Baking powder",
+        "Sugar",
+        "Butter"
+      ],
+      "instructions": [
+        "Mix dry ingredients.",
+        "Add wet ingredients and stir until smooth.",
+        "Pour batter onto a heated griddle.",
+        "Cook until bubbles form, then flip."
+      ]
+    },
+    {
+      "id": 1738462550504,
+      "title": "Grilled Cheese Sandwich",
+      "products": "Stove",
+      "description": "A classic sandwich with melted cheese.",
+      "difficulty": "Easy",
+      "authorId": "1738281406043",
+      "ingredients": [
+        "Bread",
+        "Cheddar cheese",
+        "Butter"
+      ],
+      "instructions": [
+        "Butter one side of each bread slice.",
+        "Place cheese between slices, buttered sides out.",
+        "Grill on medium heat until golden brown."
+      ]
+    },
+    {
+      "id": 1738462550505,
+      "title": "Apple Pie",
+      "products": "Oven",
+      "description": "A traditional dessert with a flaky crust.",
+      "difficulty": "Medium",
+      "authorId": "1738281406044",
+      "ingredients": [
+        "Apples",
+        "Sugar",
+        "Cinnamon",
+        "Pie crust"
+      ],
+      "instructions": [
+        "Mix sliced apples with sugar and cinnamon.",
+        "Place in pie crust and cover with top crust.",
+        "Bake at 180°C for 45 minutes."
+      ]
+    }
+  ]
+}
